@@ -1,0 +1,158 @@
+1.What are Primitive Data types in Java?
+---------------------------------------
+Answer: int, char, double, float, boolean, byte and short.
+
+
+
+2.What are the Identifiers in Java?
+-----------------------------------
+Answer: 
+->Identifiers are symbols used in programming languages to name entities such as variables,functions, classes, or other items. 
+->Identifiers are case-sensitive.
+->Can not start with numbers.
+->Start with a letter, underscore or $.
+->Reserved words or keywords can not be used as Identifiers.
+
+
+
+3.What is the final class in Java?
+-----------------------------------
+Answer: 
+->Final class is a class that cannot be subclassed or extended. 
+->When a class is declared as final, it means that it cannot be used as a superclass, and no other class can inherit from it. 
+->This is achieved by using the final keyword in the class declaration.
+->It can also be used with methods and variables within a class to achieve similar effects.
+
+
+
+4.What are the two ways to make a class final?
+----------------------------------------------
+Answer: 
+1.You can use the final keyword in the class declaration.
+	final class MyClass { }
+2.Using a private constructor in a class.
+	public class MyClass {
+    		private MyClass() { }
+	}
+
+
+5.Can we create an Instance of final class in another class?
+------------------------------------------------------------
+Answer: No, you cannot create an instance of a final class, whether it's in the same class or another class. 
+	This restriction applies universally, regardless of whether you're trying to create an instance within the same class or from another class.
+
+
+
+
+6.What is the Volatile keyword used for?
+-----------------------------------------
+Answer: Suppose, If two threads(t1 and t2) are accessing the same object and updating a variable which is declared as 'volatile'.
+	Then it meanns that t1 and t2 can make their own local cache of object except the variable which is declared as 'volatile'.
+	So the 'volatile' variable will have only one main copy which will be updated by different threads and update made by one thread
+	to the volatile variable will reflect to the other thread.
+
+
+
+
+7.What is the use of Transient keyword?
+---------------------------------------
+Answer: Transient keyword is used in Serialization.
+	If you do not want to Serialize any data member of the class, you can make it as Transient.
+	i.e. transient private String myVar;
+
+
+
+
+8.What are the types of Casting?
+--------------------------------
+Answer: 
+Upcasting: Whenever the parent class reference variable holds the child class reference id, known as upcasting.
+Downcasting: Getting back child reference id from parent class reference variable, known as downcasting.
+
+i.e.
+class Parent {
+
+	void show(){ }
+}
+
+class Child extends Parent {
+
+	void show() { }
+	
+	void disp() { }
+	
+	
+	public static void main(String[] args) {
+	
+		// Upcasting
+		Parent p = new Child();
+		p.show();
+		
+		// Downcasting
+		Child c = (Child)p;
+		c.disp();
+	}
+}
+
+
+
+
+
+9.What is Boxing and Unboxing?
+------------------------------
+Answer: 
+Boxing or Autoboxing: The automatic conversion of primitive types to the object of their corrosponding wrapper classes.
+byte      --> Byte
+boolean   --> Boolean
+char      --> Character
+double    --> Double
+int       --> Integer
+float     --> Float
+long      --> Long
+short     --> Short
+
+Unboxing: The automatic conversion of wrapper types into it's corrosponding primitive type.
+	  Opposite of Autoboxing.
+Byte        --> byte
+Boolean     --> boolean
+Character   --> char
+Double      --> double
+Integer     --> int
+Float       --> float
+Long        --> long
+Short       --> short
+
+
+10.What is the difference between keywords, Identifiers and literals in java?
+-----------------------------------------------------------------------------
+Answer: 
+keywords -> Reserve words in any programming language.
+Identifiers -> Names given to any variable, function, label or class.
+literals -> Literals represent constant values that are used in the code. 
+	    Can be of various types, such as numeric, string, boolean, character and null literal.
+	    i.e. 10, "hello", true, 'B', 'null' ....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
