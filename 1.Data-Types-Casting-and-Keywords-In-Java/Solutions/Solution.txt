@@ -62,39 +62,11 @@ Answer: Transient keyword is used in Serialization.
 
 
 
-
 8.What are the types of Casting?
 --------------------------------
 Answer: 
-Upcasting: Whenever the parent class reference variable holds the child class reference id, known as upcasting.
-Downcasting: Getting back child reference id from parent class reference variable, known as downcasting.
-
-i.e.
-class Parent {
-
-	void show(){ }
-}
-
-class Child extends Parent {
-
-	void show() { }
-	
-	void disp() { }
-	
-	
-	public static void main(String[] args) {
-	
-		// Upcasting
-		Parent p = new Child();
-		p.show();
-		
-		// Downcasting
-		Child c = (Child)p;
-		c.disp();
-	}
-}
-
-
+1.Primitive Casting: When the data is casted from one primitive type ( like int, float, double etc...) to another primitive type, then it is called primitive casting.
+2.Derived Casting: When the data is casted from one derived type to another derived type, then it is called derived casting.
 
 
 
