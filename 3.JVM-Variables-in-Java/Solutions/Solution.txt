@@ -1,0 +1,110 @@
+1.What is the difference between JVM, JRE and JDK?
+==================================================
+Solution: 
+---------
+JDK  =  JRE + Development Tools (Compilers, Debuggers)
+         |
+     = (JVM + Libraries) + Development Tools (Compilers, Debuggers)
+         
+JDK => Needed to compile java source code.
+
+JRE => Needed to run a java program, contains JVM, among other things such as libraries.
+
+JVM => It actually runs java bytecode.
+
+
+
+2.How is Java programming language machine and platform independent?
+====================================================================
+Solution: 
+---------
+ -> When we compile our java program we get an intermediate form called bytecode rather than native machine code. 
+ -> Bytecode is a set of instructions for a virtual machine, known as the Java Virtual Machine (JVM). 
+ -> Now, we can executes this bytes code on any pllatform/machine having JVM on the top of it.
+ -> The JVM interprets and executes the bytecode, making Java programs independent of the underlying hardware architecture.
+ -> Java follows the concepts of WORA(Write once run anywhere).
+
+
+
+3.Explain how Java programs are executed by the JVM?
+====================================================
+Solution: 
+---------
+The execution of Java programs involves several steps, and it relies on the Java Virtual Machine (JVM).
+
+ -> Compilation
+ -> Class Loading:
+ -> Bytecode Verification
+ -> Execution by the Interpreter
+ -> Just-In-Time (JIT) Compilation
+ -> Runtime Data Area
+ -> Execution of Threads
+ -> Garbage Collection
+ -> Native Method Interface (JNI)
+ -> Termination:
+
+
+
+4.What is the use of var args?
+==============================
+Solution: 
+---------
+ -> Known as variable-length argument lists) is a feature in Java that allows a method to accept a variable number of arguments. 
+ -> This feature is introduced using the ellipsis (...) notation in the method parameter list. 
+ -> The actual arguments are treated as an array, and you can pass any number of arguments of the specified type.
+  i.e. void mthod(int... x){   };
+       void mthod(int x, int... y){   };
+
+
+
+
+5.What are the types of variables in Java?
+==========================================
+Solution: 
+---------
+1.Local Variables:
+------------------
+ -> Variables declared within a method, constructor, or block of code and are only accessible within that specific scope.
+ -> They must be initialized before use.
+ 
+2.Instance Variables (Non-Static Fields):
+-----------------------------------------
+ -> ariables declared within a class but outside of any method, constructor, or block.
+ -> They are associated with instances (objects) of the class, and each object has its own copy of the instance variables.
+ -> Instance variables are initialized by default values if not explicitly set.
+
+3.Class Variables (Static Fields):
+----------------------------------
+ -> Static fields also known as Class variables, are declared with the static keyword within a class but outside of any method, constructor, or block.
+ -> They are associated with the class itself rather than with instances of the class.
+ -> Class variables are shared among all instances of the class.
+
+
+
+6.How many types of memory areas are allocated by JVM?
+======================================================
+Solution: 
+---------
+ -> Method Area (Class Area)
+ -> Heap
+ -> Java Stack (or Stack Memory)
+ -> PC Register (Program Counter Register)
+ -> Native Method Stack
+ -> Direct Memory
+
+
+
+7.What is Just-in-time Compiler (JIT)?
+======================================
+Solution: 
+---------
+Just-In-Time (JIT) Compilation:
+-------------------------------
+ -> While the interpreter executes the bytecode, the JVM may use a Just-In-Time (JIT) compiler to translate frequently executed bytecode into native machine code(i.e. machine-specific language). 
+ -> This compiled code is then stored in memory for subsequent execution.
+ -> JIT compilation improves the performance of Java programs by converting hotspots (frequently executed code) into native machine code.
+
+
+
+
+
